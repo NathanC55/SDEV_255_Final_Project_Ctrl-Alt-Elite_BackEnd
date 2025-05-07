@@ -25,6 +25,8 @@ router.get("/:id", authenticateToken, async (req, res) => {
   }
 });
 
+
+
 // CREATE course (teacher only)
 router.post("/", authenticateToken, checkRole("teacher"), async (req, res) => {
   try {

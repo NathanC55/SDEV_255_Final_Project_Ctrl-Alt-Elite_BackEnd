@@ -24,7 +24,7 @@ mongoose
       useUnifiedTopology: true,
     }
   )
-  .then(() => console.log("Connected to MongoDB Atlas"))
+  .then(() => console.log("Connected to MongoDB Atlas!"))
   .catch((err) => console.error("Error connecting to MongoDB Atlas:", err));
 
 const PORT = process.env.PORT || 3000;
