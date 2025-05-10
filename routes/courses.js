@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const Course = require("../models/Course");
-const authenticateToken = require("../middleware/authenticateToken");
+const { authenticateToken } = require("../middleware/authMiddleware");
 const checkRole = require("../middleware/checkRole");
 
 // GET all courses

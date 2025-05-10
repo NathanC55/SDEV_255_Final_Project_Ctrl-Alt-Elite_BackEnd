@@ -9,7 +9,7 @@ const JWT_SECRET = process.env.JWT_SECRET || "yourSecretKey";
 // Sign Up
 router.post("/signup", async (req, res) => {
   const { email, password, role = "student" } = req.body;
-
+  console.log("BODY RECEIVED:", req.body);
   try {
     // Basic validation
     if (!email || !password) {
